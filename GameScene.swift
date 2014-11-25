@@ -20,9 +20,8 @@ class GameScene: SKScene {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        var newScene = OtherScene()
+        let newScene = OtherScene()
         
-        newScene.backgroundColor = SKColor.blackColor()
         newScene.scaleMode = .AspectFill
         
         view?.presentScene(newScene)
