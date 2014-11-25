@@ -20,7 +20,7 @@ class GameScene: SKScene {
     }
     
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        let newScene = OtherScene()
+        let newScene = OtherScene(size: self.size)
         
         newScene.scaleMode = .AspectFill
         
